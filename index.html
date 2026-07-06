@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eloré — Haute Parfumerie | GTA:W</title>
+<meta name="description" content="Eloré, haute parfumerie in Los Santos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo-link">
+      <img src="images/logo.png" alt="Eloré Haute Parfumerie" class="logo-img" onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='inline'">
+      <span class="logo" id="logoFallback" style="display:none;">(GTA:W) | Eloré</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="#storia">Our Story</a></li>
+      <li><a href="#contatti">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">(GTA:W) | Haute Parfumerie · Los Santos</span>
+      <h1>Perfume is <em>light</em><br>that lingers on the skin.</h1>
+      <div class="hero-actions">
+        <a href="collections.html" class="btn btn-primary">Discover Our Collections</a>
+        <a href="#storia" class="btn btn-ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="image-slot slot-tall">
+        <img src="images/hero.png" alt="Boccetta di profumo Eloré" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="collection" id="collezione">
+  <div class="container">
+    <div class="collection-head reveal">
+      <div>
+        <span class="eyebrow">Collections</span>
+        <h2 class="collection-title">Our Fragrances</h2>
+      </div>
+      <a href="collections.html" class="btn btn-ghost">View Full Collection</a>
+    </div>
+
+    <!-- Anteprima: solo alcuni profumi in evidenza. La griglia viene generata
+         da js/script.js, che legge l'elenco "products" da js/products.js.
+         Il catalogo completo si trova in collections.html -->
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</section>
+
+<section class="about" id="storia">
+  <div class="container about-inner">
+    <div>
+      <span class="eyebrow">Our Story</span>
+      <h2>Founded in a small laboratory in Liberty City in 2026.</h2>
+      <p>Eloré was born from the belief that a fragrance should never conceal, but reveal. Every scent is handcrafted in small batches in our laboratory, using only 100% carefully selected natural ingredients. We believe in the purity of nature and its ability to capture genuine emotions, creating fragrances that become lasting memories rather than fleeting impressions.</p>
+      <div class="about-stats">
+      </div>
+    </div>
+    <div class="image-slot slot-about">
+      <img src="images/about.png" alt="Il laboratorio Eloré" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container reveal">
+    <span class="eyebrow" style="justify-content:center;">Get in contact with us!</span>
+    <h2>Looking to order a custom scent, import one, or stay updated on our latest fragrances? Join our forum today!</h2>
+    <form action="https://discord.gg/XgSGwQNhqN" method="get" class="nl-form" id="nlForm">
+       <input type="submit" value="Discord" class="btn btn-primary">
+    </form>
+  </div>
+</section>
+
+<footer id="contatti">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="logo" style="font-size:22px;">Eloré</span>
+        <p style="margin-top:14px; font-size:13.5px; color:var(--ink-soft); max-width:220px;">Haute parfumerie, Los Santos</p>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="#storia">Our Story</a></li>
+		  <li><a href="#contatti">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="https://face.gta.world/page/eloreperfumes">Facebrowser</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>(GTA:W) | Eloré Haute Parfumerie.</span>
+      <span>Los Santos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
