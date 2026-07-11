@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Collections — Eloré Haute Parfumerie | GTA:W</title>
-<meta name="description" content="Discover the full Eloré collection of fragrances.">
+<title>Location — Eloré Haute Parfumerie | GTA:W</title>
+<meta name="description" content="Visit the Eloré boutique in Los Santos — address, hours and directions.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -27,42 +27,35 @@
   </div>
 </nav>
 
-<section class="collection" id="collezione" style="padding-top:160px;">
-  <div class="container">
-    <div class="collection-head reveal">
-      <div>
-        <span class="eyebrow">Collections</span>
-        <h2 class="collection-title">Our Fragrances</h2>
-      </div>
-      <div class="filters">
-        <button class="filter-btn active" data-fam="all">All</button>
-        <button class="filter-btn" data-fam="Women">Women</button>
-        <button class="filter-btn" data-fam="Men">Men</button>
-        <button class="filter-btn" data-fam="UoL">Unisex / Limited Edition</button>
-      </div>
+<section class="location-hero">
+  <div class="container reveal">
+    <span class="eyebrow">Visit Us</span>
+    <h1>Step into the boutique.</h1>
+    <p>Our atelier sits at the heart of Los Santos, where every fragrance in the collection can be discovered, tested, and tailored by our perfumers.</p>
+  </div>
+</section>
+
+<section class="location-main">
+  <div class="container location-grid">
+    <div class="image-slot slot-map reveal">
+      <img src="images/about.png" alt="Eloré boutique, Los Santos" onerror="this.style.display='none'">
     </div>
 
-    <div class="price-filter reveal">
-      <span class="eyebrow">Price Range</span>
-      <form class="price-filter-form" id="priceForm">
-        <div class="price-field">
-          <label for="priceMin">Min</label>
-          <input type="number" id="priceMin" inputmode="numeric" min="0" placeholder="$0">
-        </div>
-        <span class="price-sep">—</span>
-        <div class="price-field">
-          <label for="priceMax">Max</label>
-          <input type="number" id="priceMax" inputmode="numeric" min="0" placeholder="$500">
-        </div>
-        <button type="submit" class="btn btn-primary price-apply">Apply</button>
-        <button type="button" class="btn btn-ghost price-reset" id="priceReset">Reset</button>
-      </form>
-      <span class="price-count" id="priceCount"></span>
-    </div>
+    <div class="location-details reveal">
+      <div class="location-block">
+        <span class="eyebrow">Address</span>
+        <p>Eloré Haute Parfumerie<br>Rockford Plaza Store #15 - Eloré<br></p>
+      </div>
 
-    <!-- La griglia viene generata da js/collections.js, leggendo l'elenco
-         "products" definito in js/products.js -->
-    <div class="product-grid" id="productGrid"></div>
+      <div class="location-block">
+        <span class="eyebrow">Get in Touch</span>
+        <p>Reach out through our forum ((discord)) and a member of our team will assist you.</p>
+        <div class="location-actions">
+          <a href="https://discord.gg/XgSGwQNhqN" class="btn btn-primary">Contact Us</a>
+          <a href="collections.html" class="btn btn-ghost">View Collection</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -106,7 +99,6 @@
   </div>
 </footer>
 
-<script src="js/products.js"></script>
-<script src="js/collections.js"></script>
+<script src="js/location.js"></script>
 </body>
 </html>
